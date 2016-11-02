@@ -21,9 +21,7 @@ public class visacenter01 {
 
         searchfield.click();
 
-        searchfield = driver.findElement(By.xpath("/html/body/div[2]/div/div/div/div/div[1]/div/div/div/form/div[1]/div/div/div/div/input"));
-
-        searchfield.sendKeys("Afghanistan");
+        driver.findElement(By.xpath("/html/body/div[2]/div/div/div/div/div[1]/div/div/div/form/div[1]/div/div/div/div/input")).sendKeys("Afghanistan");
 
         searchfield.sendKeys(Keys.ENTER);
 
@@ -31,9 +29,7 @@ public class visacenter01 {
 
         searchfield.click();
 
-        searchfield = driver.findElement(By.xpath("/html/body/div[2]/div/div/div/div/div[1]/div/div/div/form/div[2]/div/div/div/div/input"));
-
-        searchfield.sendKeys("Alberta");
+        driver.findElement(By.xpath("/html/body/div[2]/div/div/div/div/div[1]/div/div/div/form/div[2]/div/div/div/div/input")).sendKeys("Alberta");
 
         searchfield.sendKeys(Keys.ENTER);
 
@@ -41,16 +37,13 @@ public class visacenter01 {
 
         searchfield.click();
 
-        searchfield = driver.findElement(By.xpath("/html/body/div[2]/div/div/div/div/div[1]/div/div/div/form/div[3]/div/div/div/div/input"));
-
-        searchfield.sendKeys("Australia");
+        driver.findElement(By.xpath("/html/body/div[2]/div/div/div/div/div[1]/div/div/div/form/div[3]/div/div/div/div/input")).sendKeys("Australia");
 
         searchfield.sendKeys(Keys.ENTER);
 
         searchfield = driver.findElement(By.xpath("/html/body/div[2]/div/div/div/div/div[1]/div/div/div/form/div[4]/div/button"));
 
         searchfield.click();
-
 
 
     }
