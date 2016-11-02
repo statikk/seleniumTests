@@ -17,7 +17,7 @@ public class visacenter01 {
 
         driver.get("https://visacenter.ca"); // Open URL
 
-        WebElement searchfield = driver.findElement(By.xpath("/html/body/div[2]/div/div/div/div/div[1]/div/div/div/form/div[1]/div/div/button"));// Find passport
+        WebElement searchfield = driver.findElement(By.xpath("/html/body/div[2]/div/div/div/div/div[1]/div/div/div/form/div[1]/div/div/button"));// I have a passport from
 
         searchfield.click();
 
@@ -29,7 +29,7 @@ public class visacenter01 {
 
         searchfield.click();
 
-        driver.findElement(By.xpath("/html/body/div[2]/div/div/div/div/div[1]/div/div/div/form/div[2]/div/div/div/div/input")).sendKeys("Alberta");
+        driver.findElement(By.xpath("/html/body/div[2]/div/div/div/div/div[1]/div/div/div/form/div[2]/div/div/div/div/input")).sendKeys("Alberta"); // Province of residence
 
         searchfield.sendKeys(Keys.ENTER);
 
@@ -37,7 +37,7 @@ public class visacenter01 {
 
         searchfield.click();
 
-        driver.findElement(By.xpath("/html/body/div[2]/div/div/div/div/div[1]/div/div/div/form/div[3]/div/div/div/div/input")).sendKeys("Australia");
+        driver.findElement(By.xpath("/html/body/div[2]/div/div/div/div/div[1]/div/div/div/form/div[3]/div/div/div/div/input")).sendKeys("Australia"); // Travel destination
 
         searchfield.sendKeys(Keys.ENTER);
 
@@ -45,6 +45,45 @@ public class visacenter01 {
 
         searchfield.click();
 
+        try {
+            Thread.sleep(3000);
+        }
+
+        catch (Exception e) {
+            System.out.println(e);
+        }
+
+        searchfield = driver.findElement(By.xpath("/html/body/div[2]/div/div/div/div/div[1]/div/div/div/div[1]/div[1]/div[2]/a[1]"));
+
+        searchfield.click();
+
+        try {
+            Thread.sleep(5000);
+        }
+
+        catch (Exception e) {
+            System.out.println(e);
+        }
+
+        searchfield = driver.findElement(By.xpath("/html/body/div[2]/div[1]/div/div[2]/div[2]/div/a"));
+
+        searchfield.click();
+
+        try {
+            Thread.sleep(3000);
+        }
+
+        catch (Exception e) {
+            System.out.println(e);
+        }
+
+        searchfield = driver.findElement(By.xpath("id('visa-type')/table/tbody/tr/td[2]/label/input"));
+
+        searchfield.click();
+
+        searchfield = driver.findElement(By.xpath("id('visa-type')/div[4]/div/button"));
+
+        searchfield.click();
 
     }
 }
