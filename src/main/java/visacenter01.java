@@ -17,7 +17,7 @@ public class visacenter01 {
 
         driver.get("https://visacenter.ca"); // Open URL
 
-        WebElement searchfield = driver.findElement(By.xpath("/html/body/div[2]/div/div/div/div/div[1]/div/div/div/form/div[1]/div/div/button"));// Find element
+        WebElement searchfield = driver.findElement(By.xpath("/html/body/div[2]/div/div/div/div/div[1]/div/div/div/form/div[1]/div/div/button"));// Find passport
 
         searchfield.click();
 
@@ -27,6 +27,29 @@ public class visacenter01 {
 
         searchfield.sendKeys(Keys.ENTER);
 
+        searchfield = driver.findElement(By.xpath("/html/body/div[2]/div/div/div/div/div[1]/div/div/div/form/div[2]/div/div/button"));
+
+        searchfield.click();
+
+        searchfield = driver.findElement(By.xpath("/html/body/div[2]/div/div/div/div/div[1]/div/div/div/form/div[2]/div/div/div/div/input"));
+
+        searchfield.sendKeys("Alberta");
+
+        searchfield.sendKeys(Keys.ENTER);
+
+        searchfield = driver.findElement(By.xpath("/html/body/div[2]/div/div/div/div/div[1]/div/div/div/form/div[3]/div/div/button"));
+
+        searchfield.click();
+
+        searchfield = driver.findElement(By.xpath("/html/body/div[2]/div/div/div/div/div[1]/div/div/div/form/div[3]/div/div/div/div/input"));
+
+        searchfield.sendKeys("Australia");
+
+        searchfield.sendKeys(Keys.ENTER);
+
+        searchfield = driver.findElement(By.xpath("/html/body/div[2]/div/div/div/div/div[1]/div/div/div/form/div[4]/div/button"));
+
+        searchfield.click();
 
 
 
